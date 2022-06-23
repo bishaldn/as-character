@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assamese Handwritten Digit Recognition</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <h1  class="text-center fw-bold fs-1 text-primary">Assamese Character Recognition</h1>
+        
+        <br>
+        <h2 class="text-center text-secondary"> Upload Image to Predict</h2>
+        <form class="p-3 text-center" action='\', method="post" enctype="multipart/form-data">
+            <input class="form-control fs-3" type="file" name="imagefile" >
+            <br>
+            <input class="btn btn-primary mt-3 fs-3 bg-dark" type="submit" value="Click To Predict">
+            <br>
+
+
+            {% if prediction %}
+               <p class="text-center fs-3" > </p>
+        
+            {% endif %}
+
+        </form>
+        <div class="text-center fs-4">  
+            {% if prediction==[0] %}
+                    <div>  Uploaded character is : অ </div>   
+                    <br>
+                    <h1 class="text-center text-primary" > অ</h1>
+            {% endif %}
+            
+               {% if prediction==[1] %}
+                    <div>  Uploaded charcter is : আ  </div>   
+                    <br>
+                    <h1 class="text-center text-primary" >আ </h1>
+               {% endif %}
+
+               {% if prediction==[2] %}
+                    <div>  Uploaded character is : ই </div>   
+                    <br>
+                   <h1 class="text-center text-primary" > ই</h1>
+               {% endif %}
+
+               {% if prediction==[3] %}
+                    <div>  Uploaded character is : ঈ </div>   
+                    <br>
+                   <h1 class="text-center text-primary" > ঈ</h1>
+               {% endif %}
+
+               
+               {% if prediction==[4] %}
+                    <div>  Uploaded character is : উ</div>   
+                    <br>
+                   <h1 class="text-center text-primary"> উ</h1>
+               {% endif %}
+
+               {% if prediction==[5] %}
+                    <div>  Uploaded character is : ঊ</div>   
+                    <br>
+                   <h1 class="text-center text-primary"> ঊ</h1>
+               {% endif %}
+               {% if prediction==[6]%}
+                    <div>  Uploaded character is : ঋ</div>   
+                    <br>
+                   <h1 class="text-center text-primary"> ঋ</h1>
+               {% endif %}
+               {% if prediction==[7] %}
+                    <div>  Uploaded character is : এ</div>   
+                    <br>
+                   <h1 class="text-center text-primary"> এ</h1>
+               {% endif %}
+               {% if prediction==[8] %}
+                    <div>  Uploaded character is : ঐ</div>   
+                    <br>
+                   <h1 class="text-center text-primary"> ঐ</h1>
+               {% endif %}
+               {% if prediction==[9] %}
+                    <div>  Uploaded character is : ও</div>   
+                    <br>
+                   <h1 class="text-center text-primary"> ও</h1>
+               {% endif %}
+               {% if prediction==[10] %}
+                    <div>  Uploaded character is :  ঔ</div>   
+                    <br>
+                   <h1 class="text-center text-primary">  ঔ</h1>
+               {% endif %}
+               {% if prediction==[11] %}
+                    <div>  Uploaded character is :  ক</div>   
+                    <br>
+                   <h1 class="text-center text-primary">  ক</h1>
+               {% endif %}
+               {% if prediction==[12] %}
+                    <div>  Uploaded character is : খ</div>   
+                    <br>
+                   <h1 class="text-center text-primary"> খ</h1>
+               {% endif %}
+               {% if prediction==[13] %}
+                    <div>  Uploaded character is :  গ</div>   
+                    <br>
+                   <h1 class="text-center text-primary" >  গ</h1>
+               {% endif %}
+               {% if prediction==[14] %}
+                    <div>  Uploaded character is :  ঘ</div>   
+                    <br>
+                   <h1 class="text-center text-primary">  ঘ</h1>
+               {% endif %}
+               {% if prediction==[15] %}
+                    <div>  Uploaded character is :  ঙ</div>   
+                    <br>
+                   <h1 class="text-center text-primary" > ঙ</h1>
+               {% endif %}
+               {% if prediction==[16] %}
+                    <div>  Uploaded character is :   চ</div>   
+                    <br>
+                   <h1 class="text-center text-primary" >  চ</h1>
+               {% endif %}
+               {% if prediction==[17] %}
+                    <div>  Uploaded character is :  ছ</div>   
+                    <br>
+                   <h1 class="text-center text-primary" > ছ</h1>
+               {% endif %}
+               {% if prediction==[18] %}
+                    <div>  Uploaded character is : জ</div>   
+                    <br>
+                   <h1 class="text-center text-primary" > জ</h1>
+               {% endif %}
+               {% if prediction==[19] %}
+                    <div>  Uploaded character is : ঝ</div>   
+                    <br>
+                   <h1 class="text-center text-primary" > ঝ</h1>
+               {% endif %}
+               {% if prediction==[20] %}
+               <div>  Uploaded character is :ঞ</div>   
+               <br>
+               <h1 class="text-center text-primary">ঞ</h1>
+               {% endif %}
+            
+               {% if prediction==[21] %}
+               <div>  Uploaded character is :ট</div>   
+               <br>
+               <h1 class="text-center text-primary">ট</h1>
+               {% endif %}
+               
+               {% if prediction==[22] %}
+               <div>  Uploaded character is : ঠ</div>   
+               <br>
+               <h1 class="text-center text-primary">ঠ</h1>
+               {% endif %}
+               {% if prediction==[23] %}
+               <div>  Uploaded character is : ড</div>   
+               <br>
+               <h1 class="text-center text-primary" >ড</h1>
+               {% endif %}
+               {% if prediction==[24] %}
+               <div>  Uploaded character is : ঢ</div>   
+               <br>
+               <h1 class="text-center text-primary" >ঢ</h1>
+               {% endif %}
+               {% if prediction==[25] %}
+               <div>  Uploaded character is : ণ</div>   
+               <br>
+               <h1 class="text-center text-primary" >ণ</h1>
+               {% endif %}
+               {% if prediction==[26] %}
+               <div>  Uploaded character is : ত</div>   
+               <br>
+               <h1 class="text-center text-primary" >ত</h1>
+               {% endif %}
+               {% if prediction==[27] %}
+               <div>  Uploaded character is : থ</div>   
+               <br>
+               <h1 class="text-center text-primary" >থ</h1>
+               {% endif %}
+               {% if prediction==[28] %}
+               <div>  Uploaded character is : দ</div>   
+               <br>
+               <h1 class="text-center text-primary" >দ</h1>
+               {% endif %}
+               {% if prediction==[29] %}
+               <div>  Uploaded character is : ধ</div>   
+               <br>
+               <h1 class="text-center text-primary" >ধ</h1>
+               {% endif %}
+               {% if prediction==[30] %}
+               <div>  Uploaded character is : ন </div>   
+               <br>
+               <h1 class="text-center text-primary" >ন</h1>
+               {% endif %}
+               {% if prediction==[31] %}
+               <div>  Uploaded character is : প</div>   
+               <br>
+               <h1 class="text-center text-primary" >প</h1>
+               {% endif %}
+               {% if prediction==[32] %}
+               <div>  Uploaded character is : ফ</div>   
+               <br>
+               <h1 class="text-center text-primary" >ফ</h1>
+               {% endif %}
+               {% if prediction==[33] %}
+               <div>  Uploaded character is : ব</div>   
+               <br>
+               <h1 class="text-center text-primary" >ব</h1>
+               {% endif %}
+               {% if prediction==[34] %}
+               <div>  Uploaded character is :  ভ</div>   
+               <br>
+               <h1 class="text-center text-primary" > ভ</h1>
+               {% endif %}
+               {% if prediction==[35] %}
+               <div>  Uploaded character is :  ম</div>   
+               <br>
+               <h1 class="text-center text-primary" > ম</h1>
+               {% endif %}
+               {% if prediction==[36] %}
+               <div>  Uploaded character is : য</div>   
+               <br>
+               <h1 class="text-center text-primary" >য</h1>
+               {% endif %}
+               {% if prediction==[37] %}
+               <div>  Uploaded character is : ৰ</div>   
+               <br>
+               <h1 class="text-center text-primary" >ৰ</h1>
+               {% endif %}
+               {% if prediction==[38] %}
+               <div>  Uploaded character is : ল</div>   
+               <br>
+               <h1 class="text-center text-primary" >ল</h1>
+               {% endif %}
+               {% if prediction==[39] %}
+               <div>  Uploaded character is : শ</div>   
+               <br>
+               <h1 class="text-center text-primary" >শ</h1>
+               {% endif %}
+               {% if prediction==[40] %}
+               <div>  Uploaded character is : ষ</div>   
+               <br>
+               <h1 class="text-center text-primary" >ষ</h1>
+               {% endif %}
+               {% if prediction==[41] %}
+               <div>  Uploaded character is : স</div>   
+               <br>
+               <h1 class="text-center text-primary" >স</h1>
+               {% endif %}
+               {% if prediction==[42] %}
+               <div>  Uploaded character is :হ </div>   
+               <br>
+               <h1 class="text-center text-primary" >হ</h1>
+               {% endif %}
+               {% if prediction==[43] %}
+               <div>  Uploaded character is : ড়</div>   
+               <br>
+               <h1 class="text-center text-primary" >ড়</h1>
+               {% endif %}
+               {% if prediction==[44] %}
+               <div>  Uploaded character is : ড</div>   
+               <br>
+               <h1 class="text-center text-primary" >ড</h1>
+               {% endif %}
+               {% if prediction==[45] %}
+               <div>  Uploaded character is :  য়</div>   
+               <br>
+               <h1 class="text-center text-primary" > য়</h1>
+               {% endif %}
+               {% if prediction==[46] %}
+               <div>  Uploaded character is :  ৎ</div>   
+               <br>
+               <h1 class="text-center text-primary" > ৎ</h1>
+               {% endif %}
+               {% if prediction==[47] %}
+               <div>  Uploaded character is : ং</div>   
+               <br>
+               <h1 class="text-center text-primary" >ং</h1>
+               {% endif %}
+               {% if prediction==[48] %}
+               <div>  Uploaded character is : ঃ</div>   
+               <br>
+               <h1 class="text-center text-primary" >ঃ</h1>
+               {% endif %}
+               {% if prediction==[49] %}
+               <div>  Uploaded character is :  ঁ</div>   
+               <br>
+               <h1 class="text-center text-primary" > ঁ</h1>
+               {% endif %}
+
+          
+               
+
+        </div>
+            
+        
+    </body>
+</html>
